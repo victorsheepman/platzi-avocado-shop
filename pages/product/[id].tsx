@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import Layout from '@components/Layout/Layout'
 import ProductSummary from '@components/ProductSummary/ProductSummary'
-
+//hola como estas?
 const ProductPage = () => {
   const { query } = useRouter()
   const [product, setProduct] = useState<TProduct | null>(null)
