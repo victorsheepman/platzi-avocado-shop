@@ -5,7 +5,6 @@ import Link from 'next/link'
 type ProductListProps = {
   products: TProduct[]
 }
-
 const mapProductsToCards = (products: TProduct[]) =>
   products.map(({ name, id, price, image }) => (
     <Link key={id} href="/product/[id]" as={`/product/${id}`} passHref>
